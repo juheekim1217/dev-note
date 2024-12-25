@@ -1,29 +1,42 @@
 # dev-note
 
 # GIT
-
+## Set your global username/email configuration:
+```GIT
 git config --global user.name "Full Name"
 git config --global user.email "email@address.com"
+```
 
-git remote set-url origin "URL"
-
-## First commit
+## Initial commit
+```GIT
 git init
 git add .
-git commit -am "First commit"
+git commit -m "Initial commit"
 git remote add origin git@github.com:your_github_user/myapplication.git
-### Get the README and .gitignore files
-git pull origin master
-### Send the entire application to Github
-git push origin master
+git push -u <remote_name> <local_branch_name>
+```
+
+## Create a new branch
+```GIT
+git checkout -b ＜new-branch＞
+```
+
+## Switch to an existing branch
+```GIT
+git checkout ＜branchname＞
+```
 
 # Flutter
 ## Clear Build Cache
 If the icon does not update after regeneration, clear the build cache:
 
 Run the following commands:
+```
 flutter clean
 flutter pub get
+```
 
 Rebuild the app:
+```
 flutter run
+```
