@@ -1,6 +1,20 @@
 # dev-note
 
 # GIT
+## Init:
+…or create a new repository on the command line
+echo "# hts" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/juheekim1217/hts.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/juheekim1217/hts.git
+git branch -M main
+git push -u origin main
+
 ## Set your global username/email configuration:
 ```GIT
 git config --global user.name "Full Name"
